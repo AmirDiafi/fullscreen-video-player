@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin:0;
+}
+
+.video {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #2d2d2d;
+    color: #fff;
+    position: relative;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #561eb765;
+    height: 100%;
+    width: 100%;
+}
+
+.video .play-pause {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .play-pause .play-icon {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #200b467d;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.video .audio-countainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.video .audio-countainer .seekbar {
+    background-color: #551eb77d;
+    width:100%;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.video .audio-countainer .seekbar .fill {
+    background-color: #551eb7;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.video .audio-countainer .seekbar .handle {
+    width: 10px;
+    height: 10px;
+    background-color: #551eb7;
+    transform: scale(2);
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 100%;
+}
+
+.video .audio-countainer .seekbar .handle:hover {
+    transform: scale(2.5) !important
+}
+
